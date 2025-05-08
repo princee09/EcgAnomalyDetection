@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: ecg-analysis-system
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run Streamlit.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+    plan: free
+    branch: main
+    healthCheckPath: /
+    autoDeploy: true
+    preDeployCommand: bash setup.sh
