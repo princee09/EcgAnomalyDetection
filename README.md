@@ -64,7 +64,6 @@ To start the application locally:
 streamlit run Streamlit.py
 ```
 
-The application will be available at http://localhost:8501
 
 ## Dependencies
 
